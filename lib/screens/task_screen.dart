@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/task_list.dart';
 
 class TaskScreen extends StatelessWidget {
   @override
@@ -40,6 +41,10 @@ class TaskScreen extends StatelessWidget {
               SizedBox(height: 10,),
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 15,
+                  ),
                   height: 300,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -47,8 +52,8 @@ class TaskScreen extends StatelessWidget {
                         topLeft: Radius.circular(20),
                         topRight: Radius.circular(20.0),
                     ),
-
                   ),
+                  child: TaskList(),
                 ),
               ),
               ],
@@ -62,3 +67,6 @@ class TaskScreen extends StatelessWidget {
     );
   }
 }
+
+
+

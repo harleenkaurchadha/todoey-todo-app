@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:todoey/models/task_data.dart';
+import 'package:provider/provider.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  final Function addNewTask;
-  AddTaskScreen(this.addNewTask);
-
   @override
   Widget build(BuildContext context) {
     String newTaskTitle;
@@ -39,15 +38,17 @@ class AddTaskScreen extends StatelessWidget {
             ),
             SizedBox(height: 20,),
             FlatButton(
-                onPressed: (){
-                  addNewTask(newTaskTitle);
-                  },
                   child: Text('Add',
                   style: TextStyle(
                   color: Colors.white,
                   fontSize: 15,
                 ),
                 ),
+              onPressed: (){
+                Provider.of<TaskData>(context, listen: false).addNewTask(newTaskTitle);
+                Navigator.pop(context);
+                print('task is added');
+              },
                 color: Colors.lightBlueAccent,
             ),
           ],

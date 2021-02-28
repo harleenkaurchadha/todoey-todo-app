@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../models/task.dart';
 
 class AddTaskScreen extends StatelessWidget {
   final Function addNewTask;

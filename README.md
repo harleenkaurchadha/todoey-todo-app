@@ -1,16 +1,13 @@
-# todoey
+# About app
 
-A new Flutter application.
+In this we are going to make a Todo list app , which will keep track of all your tasks. It will contain a list of tasks which you can add using a floating action button .The task list will have a checkbox beside them which we can check or uncheck to mark task completion.The task count will also be taken into account and shown on screen. We can also delete task by long pressing on a task.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+![output](https://user-images.githubusercontent.com/23056679/110833106-173be680-82c2-11eb-85ac-340c79e091c6.gif)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## How to use
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Download or clone this repo by using the following link:
+
+[<u>git@github.com:harleenkaurchadha/todoey-todo-app.git</u>](https://git@github.com:harleenkaurchadha/todoey-todo-app.git)
